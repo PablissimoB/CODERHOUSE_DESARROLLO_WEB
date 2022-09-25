@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/nike.png" style="width: 30px;" alt="">
+        <nav>
+            <ul>
+                <li> <a href="">Inicio</a></li>
+                <li> <a href="./lista.html">Lista</a></li>
+                <li> <a href="https://www.google.com/" target="_blank">Sitio Externo</a></li>
+                <li> <a href="#pie">Pie</a></li>
+                <li> <a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" method="" enctype="" >
+        <fieldset>
+        <legend>Datos personales</legend>
+            <label for="texto">
+                <span>Pregunta o petitorio</span>
+                <input type="text" id="texto" placeholder="escribi tu nombre" >
+            </label>
+            <label for="mail">
+                <span>Mail</span>
+                <input type="email" id="mail" placeholder="escribi tu mail" >
+            </label>
+            <label for="password">
+                <span>Contraseña</span>
+                <input type="password" id="password" placeholder="escribi tu pass" >
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Genero</legend>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="hombre" name="genero" value="hombre">
+            <label for="hombre">Mujer</label>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+        </fieldset>
+            <label for="check">Acepta?</label>
+            <input type="checkbox" id="acepto" name="check" value="1">
+    </form>
+</body>
+</html>

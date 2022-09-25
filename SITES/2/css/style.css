@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Della Respira';
+    font-style: normal;
+
+}
+body{
+    height: 100vh;
+}
+main{
+    width: 70%;
+    height: 70vh;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-left: 10%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    color: white;
+    background-color: black;
+    width: 70%;
+    height: 12vh;
+}
+input{
+    background-color: #D9D9D9;
+    color: black;
+    margin-bottom: 2%;
+}
+select{
+    background-color: #D9D9D9;
+    color: black;
+}
+.itemMenu{
+    padding-top: 3%;
+    padding-left: 2%;
+}
+.borderArea{
+    border: 1px solid black;
+}
+.navBarUp{
+    width: 70%;
+}
+.align{
+    height: 12vh;
+    align-items: center;
+}
+
+.logo{
+    width: 60%;
+    
+}
+
+.flexBox{
+    display: flex;
+    flex: 1;
+}
+.corner{
+    width: 15%;
+    justify-content: center;
+}
+
+.address{
+    color: white;
+    background-color: black;
+    width: 70%;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 15%;
+    height: 70vh;
+}
+.order{
+    width: 15%;
+    height: 70vh;
+}
+.side{
+    background-color: black;
+    color: white;
+}
+.flexColumn{
+    flex-direction: column;
+}
+footer{
+    width: 100%;
+    margin-top: 0.5%;
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    height: 4vh;
+}
+h3{
+    margin-bottom: 1%;
+}
+h2{
+    padding: 10%;
+    font-size: 110%;
+}
+.menuHover:hover{
+    color:dimgray;
+}
+.orderIcon{
+    width: 50px;
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.orderH2{
+    color: white;
+}
+.alignTotal{
+    margin-top: auto;
+}
+.tray{
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 85%;
+    height: 60vh;
+}
+.checkMain{
+    background-color: black;
+    
+}
+.subitemMenu{
+    padding-top: 3%;
+    padding-left: 6%;
+}
+.checkButton{
+    color: black;
+}
+.map{
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 85%;
+    height: 60vh;
+    border-radius: 30px;
+}
+.buttonOrder{
+    color: white;
+    background-color: #1E1E1E;
+    border-radius: 30px;
+    width: 80px;
+    margin-top: 8%;
+    margin-left: 45%;
+    
+}
+.buttonOrder:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.trashIcon{
+    width: 15px;
+}
+.imgMain{
+    border-radius: 3%;
+    width: 100%;
+    height: 30vh;
+}
+h3{
+    margin-bottom: 2px;
+}
+.flexContainer {
+    display: flex;
+}
+.marginWhat{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.imageWhat{
+    margin-top: 5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+.cardWhatMargin{
+    margin-right: 2%;
+}
+.marginWhat p{
+    text-indent: 5%;
+}
+.marginWhat h3{
+    font-weight: normal;
+}
+.mainWhat{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.imageWho{
+    border-radius: 4%;
+    width: 60%;
+    height: 30vh;
+}
+.mainWho{
+    margin-top: 5%;
+    margin-left: 6%;
+}
+.marginWhoImg{
+    margin-top: 3%;
+    margin-left: 15%;
+}
+.mainWho p{
+    margin-bottom: 1%;
+}
+.buttonCheck{
+    height: 4vh;
+}
+.absolute {
+    position: absolute;
+    top: 25vh;
+    left: 23vw;
+    right: 18vw;
+    display: flex;
+  }
+.imgFood{
+    width: 100%;
+}
+.descriptionFood{
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    width: 60%;
+    height: 20vh;
+}
+.descriptionFood p{
+    margin-top: 25%;
+}
+.absolute button{
+    width: 60%;
+    background-color: transparent;
+    border: none;
+}
+.absolute button:hover{
+    cursor: pointer;
+}
+.absolute button:active{
+    background-color: green;
+    transition: opacity 0.5s;
+    opacity: 0.5;
+}
+.absoluteBL{
+    color: white;
+    position: absolute;
+    top: 38vh;
+    left: 19vw;
+    right: 77.5vw;
+    bottom: 45vh;
+    background-color: transparent;
+    border: none;
+    transition: opacity 0.5s;
+}
+.absoluteBL:hover{
+    cursor: pointer;
+}
+.absoluteBL:active{
+    opacity: 0.5;
+    top: 44vh;
+    left: 19vw;
+    right: 78vw;
+    bottom: 49vh;
+    border-radius: 50%;
+    background-color: gray;
+}
+.absoluteBR{
+    color: white;
+    position: absolute;
+    top: 38vh;
+    left: 77vw;
+    right: 20vw;
+    bottom: 45vh;
+    background-color: transparent;
+    border: none;
+    transition: opacity 0.5s;
+}
+.absoluteBR:hover{
+    cursor: pointer;
+}
+.absoluteBR:active{
+    opacity: 0.5;
+    top: 44vh;
+    left: 77.2vw;
+    right: 20vw;
+    bottom: 49vh;
+    border-radius: 50%;
+    background-color: gray;
+}
+.detailOrder{
+
+    margin-top: -20%;
+}
+.border{
+    border: 1px solid #D9D9D9;
+}
+.orderWidth{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 85%;
+}
+.orderTitle{
+    width: 15%;
+    height: 7vh;
+}
+.quantity{
+    border-radius: 20px;
+    width: 10%;
+    text-align: center;
+}
+.description{
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+}
+.name{
+    width: 55%;
+}
+.adress{
+    width: 85%;
+}
+.telephone{
+    width: 15%;
+}
+.mail{
+    width: 45%;
+}
+.delete{
+    border: none;
+    height: 15px;
+}
+.delete:hover{
+    cursor: pointer;
+}
+.marginBottom{
+    margin-bottom: 2%;
+}
