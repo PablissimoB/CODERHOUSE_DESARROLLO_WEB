@@ -59,7 +59,58 @@
             <div class="content med contentAnimation" id="middle">
                 <div >
                     <img src="../assets/photos/trayDesktop.jpg" class="imgTray" alt="">
-
+                    <button class="absoluteBL">.</button>
+                    <div class="absolute">
+                        <div>
+                            <button><img src="../assets/photos/food1.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food2.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food3.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food4.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absoluteBR">.</button>
                 </div>
 
             </div>
@@ -158,12 +209,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-8 med contentAnimation">
+                <div class="col-8 med contentAnimation" id="middleM">
                     <div class="container-fluid">
                         <div class="">
                             <img src="../assets/photos/trayMobile.jpg" class="imgTray" alt="">
-                            <div class="">
-        
+                            <div class="absolute">
+                                <div class="flexColumn">
+                                    <button><img src="../assets/photos/food1.jpg" class="imgFood" alt=""></button>
+                                    <button><img src="../assets/photos/food2.jpg" class="imgFood" alt=""></button>
+                                </div>
+                                <div class="flexColumn">
+                                    <button><img src="../assets/photos/food3.jpg" class="imgFood" alt=""></button>
+                                    <button><img src="../assets/photos/food4.jpg" class="imgFood" alt=""></button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -232,6 +291,8 @@
     }
     function animacionMobile (){
         const desktop = document.getElementById('box-object');
+        const desktop2 = document.getElementById('middleM');
+        desktop2.style.visibility = "hidden";
         desktop.style.visibility = "visible";
         desktop.classList.add('scale-in-tl');
         setTimeout(() => { window.location.href='check.html' ; }, 500);

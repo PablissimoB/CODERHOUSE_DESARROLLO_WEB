@@ -35,40 +35,57 @@
             </div>
     
             <div class="backgroundBlack content med">
-                <div class="flex">
+                <div class="flex orderTitle">
                     <div>
                         <img src="../assets/photos/order.jpg" class="orderImg" alt="">
                     </div>
                     <h1 class="paddingTop fontColorWhite" >ORDER</h1>
                 </div>
 
-                <table class="tableSize fontColorWhite">
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                <div class="container-fluid">
+                    <form method="post" action="">
+                    
+                    <div class="detail">
+                        <div class="flex">
+                            <input type="number" class="quantity" value="1" name="" id="">
+                            <input type="text" name="" class="description" readonly="true" value="SALAD 1: MEDITERRANEAN" id="">
+                            <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                        </div>
+                        <div class="flex">
+                            <input type="number" class="quantity" value="2" name="" id="">
+                            <input type="text" name="" class="description" readonly="true" value="SALAD 2: PARMESSAN" id="">
+                            <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                        </div>
+                    </div>
 
-                        </tr>
-                    </tfoot>
-                </table>
-
-                <form action="">
-
+                    <div class="information">
+                        <div class="flex flexCenter">
+                            <input type="text" name="" class="name" placeholder="Name" id="">
+                            <input type="email" class="mail"  placeholder="Email" id="">
+                        </div>
+                        <div class="flex flexCenter">
+                            <input type="text" class="adresses" placeholder="Adress" id="">
+                            <input type="tel" class="telephone" placeholder="Telephone" id="">
+                            <select name="" id="">
+                                <option value="0">Payment Method</option>
+                                <option value="CreditCard">CreditCard</option>
+                                <option value="DebitCard">DebitCard</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                        </div>
+                        <div class="flex flexCenter">
+                            <input type="submit" class="buttonOrder" value="Order">
+                        </div>
+                    </div>                    
                 </form>
-                
             </div>
+        </div>
 
             <div class="order backgroundBlack med container-fluid">
                     <div class="flex flexCenter fontColorWhite marginTotal">
-                        <div class="flexColumn">
-                            TOTAL:
-                        </div>
-                        <div class="flexColumn">
-                            $ 0.00
+                        <div class="flexRow">
+                            <p>TOTAL</p>
+                            <p>$ 3200.00</p>
                         </div>
 
                     </div>
@@ -113,63 +130,108 @@
                     <li><a href="menu.html">MENU</a></li>
                 </ul>
             </nav>
-    
         </header>
         <div>
-            <div class="row med">
-                <div class="col-4 backgroundBlack">
-
-                </div>
-                <div class="backgroundBlack col-8 med">
-    
-                </div>
-                
-            </div>
-            <div class="row bot borderLineBlack">
-                <div class="col-4">
-                    <div class="row borderLineBlack rectangles">
-                        <ul>
-                            <li>TASTE</li>
-                            <li>IT</li>
-                        </ul>
-                    </div>
-                    <div class="row borderLineBlack rectangles">
-                        <ul>
-                            <li>FEEL</li>
-                            <li>IT</li>
-                        </ul>
-                    </div>
-                    <div class="row borderLineBlack rectangles">
-                        <ul>
-                            <li>LIVE</li>
-                            <li>IT</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-8 backgroundBlack">
-                    <div class="row">
-                        <div class="col-4">
-                            <img  src="../assets/photos/order.jpg" class="orderImg" alt="">
+            <form action="">
+                <div class="row med">
+                    <div class="col-2 backgroundBlack">
+                        <div class="container-fluid quantities">
+                            <div class="row">
+                                <input type="number" class="quantity" value="1" name="" id="">
+                            </div>
+                            <div class="row">
+                                <input type="number" class="quantity" value="2" name="" id="">
+                            </div>
                         </div>
-                        <h1 class="col-8 fontColorWhite paddingTopMobile" >ORDER</h1>
                     </div>
-                    <table class="tableSizeMobile fontColorWhite">
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Total: </td>
-                                <td>$ 0.00</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <button>Check</button>
+
+                    <div class="backgroundBlack col-10 med">
+                        <div class="row">
+                            <div class="col-2">
+                                <img  src="../assets/photos/order.jpg" class="orderImg" alt="">
+                            </div>
+                            <h1 class="col-10 fontColorWhite paddingTopMobile" >ORDER</h1>
+                        </div>
+    
+                        <div class="detailMob">
+                            <div class="row">
+                                <div class="col-11">
+                                    <input type="text" name="" class="description" readonly="true" value="SALAD 1: MEDITERRANEAN" id="">
+                                </div>
+                                <div class="col-1">
+                                    <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-11">
+                                    <input type="text" name="" class="description" readonly="true" value="SALAD 2: PARMESSAN" id="">
+                                </div>
+                                <div class="col-1">
+                                    <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
+
+                <div class="row bot borderLineBlack">
+                    <div class="col-4">
+                        <div class="row borderLineBlack rectangles">
+                            <ul>
+                                <li>TASTE</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                        <div class="row borderLineBlack rectangles">
+                            <ul>
+                                <li>FEEL</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                        <div class="row borderLineBlack rectangles">
+                            <ul>
+                                <li>LIVE</li>
+                                <li>IT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-8 backgroundBlack">
+                        <div class="row">
+                            <input type="text" class="col-12" placeholder="Name" id="">
+                        </div>
+                        <div class="row"><input type="email" class="col-12" placeholder="Email" id=""></div>
+                        <div class="row"><input type="text" class="col-12" placeholder="Adress" id=""></div>
+                        <div class="row"><input type="tel" class="col-12" placeholder="Telephone" id=""></div>
+                        <div class="row">
+                            <select name="" class="col-12" id="">
+                                <option value="0">Payment Method</option>
+                                <option value="CreditCard">CreditCard</option>
+                                <option value="DebitCard">DebitCard</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                        </div>
+
+                        <div class="fontColorWhite container-fluid">
+                            <div class="confirm row">
+                                <div class="col-2">
+                                    TOTAL
+                                </div>
+                                <div class="col-7 d-flex justify-content-center">
+                                    $ 3200.00
+                                </div>
+                                <div class="col-3">
+                                    <button class="confirmButton">
+                                        <img src="../assets/photos/confirm.png" class="" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
