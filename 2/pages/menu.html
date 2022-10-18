@@ -11,13 +11,12 @@
 </head>
 <body>
 
-<div id="box-object">
-
-</div>
+<div id="box-object"></div>
 
 <!--Desktop / se usa Grid y flex-->
-<div class="desktop">
+<div class="desktop container-fluid">
     <div class="grid">
+        <!--Header-->
             <div class="cornerLT top">
                 <img src="../assets/photos/logoDesktop.jpg" alt="">
             </div>
@@ -34,6 +33,7 @@
                 </ul>
             </div>
 
+            <!--Middle Menu Left-->
             <div class="menu backgroundBlack med">
                     <h1 class="fontColorWhite">MENU</h1>
                         <div>
@@ -56,6 +56,7 @@
                         </div>
             </div>
     
+            <!--Main-->
             <div class="content med contentAnimation" id="middle">
                 <div >
                     <img src="../assets/photos/trayDesktop.jpg" class="imgTray" alt="">
@@ -112,9 +113,9 @@
                     </div>
                     <button class="absoluteBR">.</button>
                 </div>
-
             </div>
 
+            <!--Middle Order Right-->
             <div class="order backgroundBlack med">
                     <div class="flex">
                         <div>
@@ -145,6 +146,7 @@
                     </div>
             </div>
             
+            <!--Bottom-->
             <div class="bot conerLB borderLineBlack rectangles">
                 <ul class="marginTop">
                     <li>FEEL</li>
@@ -163,6 +165,7 @@
                     </ul>
             </div>
         
+        <!--Footer-->
         <div class="footer flex flexCenter backgroundGray fontColorWhite marginTop">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugiat dolores fugit omnis sequi. Distinctio, reprehenderit provident officia eveniet non, voluptas nisi adipisci, perferendis cum numquam quo. Commodi, animi nam?
         </div>
@@ -170,7 +173,8 @@
 </div>
 
 
-
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
 <!--Mobile / se usa Bootstrap y un poco de flex-->
 <div class="mobile" id="mobile">
     <div class="container-fluid">
@@ -184,10 +188,9 @@
                     <li><a href="menu.html">MENU</a></li>
                 </ul>
             </nav>
-    
         </header>
-        <div>
-            <div class="row med">
+
+            <main class="row med">
                 <div class="col-4 backgroundBlack">
                     <h1 class="marginTop fontColorWhite">MENU</h1>
                     <div>
@@ -228,8 +231,9 @@
                     </div>
                 </div>
                 
-            </div>
-            <div class="row bot borderLineBlack">
+            </main>
+
+            <footer class="row bot borderLineBlack">
                 <div class="col-4">
                     <div class="row borderLineBlack rectangles">
                         <ul>
@@ -273,8 +277,8 @@
                     </table>
                     <button onclick="animacionMobile();">Check</button>
                 </div>
-            </div>
-        </div>
+            </footer>
+
     </div>
 </div>
 

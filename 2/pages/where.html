@@ -10,15 +10,13 @@
     <title>BONI'S</title>
 </head>
 <body>
+                
+<div id="box-object"></div>
 
 <!--Desktop / se usa Grid y flex-->
-                
-<div id="box-object">
-
-</div>
-
-<div class="desktop">
+<div class="desktop container-fluid">
     <div class="grid">
+        <!--Header-->
             <div class="cornerLT top">
                 <img src="../assets/photos/logoDesktop.jpg" alt="">
             </div>
@@ -35,6 +33,7 @@
                 </ul>
             </div>
 
+            <!--Middle Menu Left-->
             <div class="menu backgroundBlack med">
                     <h1 class="fontColorWhite">ABOUT US</h1>
                     <ul>
@@ -44,12 +43,14 @@
                     </ul>
             </div>
     
+            <!--Main-->
             <div class="content med" id="middle">
                 <div>
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.18595235926!2d-64.18923054874439!3d-31.409002402947443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298796d5489a5%3A0x5cfb8d12a3de8e88!2sJos%C3%A9%20Antonio%20de%20Sucre%20474%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1664058272771!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
+            <!--Middle Order Right-->
             <div class="order backgroundBlack med">
                     <div class="flex">
                         <div>
@@ -80,6 +81,7 @@
                     </div>
             </div>
             
+            <!--Bottom-->
             <div class="bot conerLB borderLineBlack rectangles">
                 <ul class="marginTop">
                     <li>FEEL</li>
@@ -98,6 +100,7 @@
                     </ul>
             </div>
         
+        <!--Footer-->
         <div class="footer flex flexCenter backgroundGray fontColorWhite marginTop">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugiat dolores fugit omnis sequi. Distinctio, reprehenderit provident officia eveniet non, voluptas nisi adipisci, perferendis cum numquam quo. Commodi, animi nam?
         </div>
@@ -105,7 +108,8 @@
 </div>
 
 
-
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
 <!--Mobile / se usa Bootstrap y un poco de flex-->
 <div class="mobile" id="mobile">
     <div class="container-fluid">
@@ -119,10 +123,9 @@
                     <li><a href="menu.html">MENU</a></li>
                 </ul>
             </nav>
-    
         </header>
-        <div>
-            <div class="row med">
+
+            <main class="row med">
                 <div class="col-4 backgroundBlack">
                     <h1 class="marginTop fontColorWhite">ABOUT US</h1>
                     <ul>
@@ -137,8 +140,8 @@
                     </div>
                 </div>
                 
-            </div>
-            <div class="row bot borderLineBlack">
+            </main>
+            <footer class="row bot borderLineBlack">
                 <div class="col-4">
                     <div class="row borderLineBlack rectangles">
                         <ul>
@@ -182,8 +185,7 @@
                     </table>
                     <button onclick="animacionMobile();">Check</button>
                 </div>
-            </div>
-        </div>
+            </footer>
     </div>
 </div>
 

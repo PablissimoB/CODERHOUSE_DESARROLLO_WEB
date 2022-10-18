@@ -12,8 +12,9 @@
 <body>
 
     <!--Desktop / se usa Grid y flex-->
-<div class="desktop">
+<div class="desktop container-fluid">
     <div class="grid">
+        <!--Header-->
             <div class="cornerLT top">
                 <img src="../assets/photos/logoDesktop.jpg" alt="">
             </div>
@@ -30,10 +31,10 @@
                 </ul>
             </div>
 
-            <div class="menu backgroundBlack med">
-
-            </div>
+            <!--Menu left-->
+            <div class="menu backgroundBlack med"></div>
     
+            <!--Main-->
             <div class="backgroundBlack content med">
                 <div class="flex orderTitle">
                     <div>
@@ -45,42 +46,43 @@
                 <div class="container-fluid">
                     <form method="post" action="">
                     
-                    <div class="detail">
-                        <div class="flex">
-                            <input type="number" class="quantity" value="1" name="" id="">
-                            <input type="text" name="" class="description" readonly="true" value="SALAD 1: MEDITERRANEAN" id="">
-                            <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                        <div class="detail">
+                            <div class="flex">
+                                <input type="number" class="quantity" value="1" name="" id="">
+                                <input type="text" name="" class="description" readonly="true" value="SALAD 1: MEDITERRANEAN" id="">
+                                <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                            </div>
+                            <div class="flex">
+                                <input type="number" class="quantity" value="2" name="" id="">
+                                <input type="text" name="" class="description" readonly="true" value="SALAD 2: PARMESSAN" id="">
+                                <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
+                            </div>
                         </div>
-                        <div class="flex">
-                            <input type="number" class="quantity" value="2" name="" id="">
-                            <input type="text" name="" class="description" readonly="true" value="SALAD 2: PARMESSAN" id="">
-                            <button class="delete"><img src="../assets/photos/trash.jpg" class="trashIcon" alt=""> </button>
-                        </div>
-                    </div>
 
-                    <div class="information">
-                        <div class="flex flexCenter">
-                            <input type="text" name="" class="name" placeholder="Name" id="">
-                            <input type="email" class="mail"  placeholder="Email" id="">
-                        </div>
-                        <div class="flex flexCenter">
-                            <input type="text" class="adresses" placeholder="Adress" id="">
-                            <input type="tel" class="telephone" placeholder="Telephone" id="">
-                            <select name="" id="">
-                                <option value="0">Payment Method</option>
-                                <option value="CreditCard">CreditCard</option>
-                                <option value="DebitCard">DebitCard</option>
-                                <option value="Cash">Cash</option>
-                            </select>
-                        </div>
-                        <div class="flex flexCenter">
-                            <input type="submit" class="buttonOrder" value="Order">
-                        </div>
-                    </div>                    
-                </form>
+                        <div class="information">
+                            <div class="flex flexCenter">
+                                <input type="text" name="" class="name" placeholder="Name" id="">
+                                <input type="email" class="mail"  placeholder="Email" id="">
+                            </div>
+                            <div class="flex flexCenter">
+                                <input type="text" class="adresses" placeholder="Adress" id="">
+                                <input type="tel" class="telephone" placeholder="Telephone" id="">
+                                <select name="" id="">
+                                    <option value="0">Payment Method</option>
+                                    <option value="CreditCard">CreditCard</option>
+                                    <option value="DebitCard">DebitCard</option>
+                                    <option value="Cash">Cash</option>
+                                </select>
+                            </div>
+                            <div class="flex flexCenter">
+                                <input type="submit" class="buttonOrder" value="Order">
+                            </div>
+                        </div>                    
+                    </form>
+                </div>
             </div>
-        </div>
 
+            <!--Middle Right-->
             <div class="order backgroundBlack med container-fluid">
                     <div class="flex flexCenter fontColorWhite marginTotal">
                         <div class="flexRow">
@@ -91,6 +93,7 @@
                     </div>
             </div>
             
+            <!--Bottom-->
             <div class="bot conerLB borderLineBlack rectangles">
                 <ul class="marginTop">
                     <li>FEEL</li>
@@ -109,6 +112,7 @@
                     </ul>
             </div>
         
+            <!--Footer-->
         <div class="footer flex flexCenter backgroundGray fontColorWhite marginTop">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugiat dolores fugit omnis sequi. Distinctio, reprehenderit provident officia eveniet non, voluptas nisi adipisci, perferendis cum numquam quo. Commodi, animi nam?
         </div>
@@ -116,10 +120,12 @@
 </div>
 
 
-
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
 <!--Mobile / se usa Bootstrap y un poco de flex-->
 <div class="mobile" id="mobile">
     <div class="container-fluid">
+
         <header class="row borderLineBlack">
             <div class="col flex flexCenter top">
                 <img src="../assets/photos/logoMobile.jpg" class="logo" alt="">
@@ -131,7 +137,8 @@
                 </ul>
             </nav>
         </header>
-        <div>
+
+        <main>
             <form action="">
                 <div class="row med">
                     <div class="col-2 backgroundBlack">
@@ -175,7 +182,8 @@
                     </div>
                     
                 </div>
-
+                
+                <!--Bottom-->
                 <div class="row bot borderLineBlack">
                     <div class="col-4">
                         <div class="row borderLineBlack rectangles">
@@ -232,7 +240,8 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </main>
+
     </div>
 </div>
 
